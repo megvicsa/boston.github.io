@@ -255,9 +255,9 @@
                 parkingFee: '$29/$18',
                 parkingFeeRate: 'for parking on weekdays/weekends',
 
-                coffee: 'Yes <br><br> There is a coffee shop in walking distance... 0 miles',
-                grocery: 'Yes <br><br> There is a grocery store in walking distance... 0 miles',
-                sportsClothes: 'Yes <br><br> There is a sports or clothing store in walking distance... 0 miles',
+                coffee: 'Yes <br><br> There is a coffee shop in walking distance... 0.05 miles',
+                grocery: 'Yes <br><br> There is a grocery store in walking distance... 0.2 miles',
+                sportsClothes: 'Yes <br><br> There is a sports or clothing store in walking distance... 0.3 miles',
                 
                 rating: '★ ★ ★ ★ ★',
                 ratingNum: '17'
@@ -293,9 +293,9 @@
                 parkingFee: '$29/$18',
                 parkingFeeRate: 'for parking on weekdays/weekends',
 
-                coffee: 'Yes <br><br> There is a coffee shop in walking distance... 0 miles',
-                grocery: 'Yes <br><br> There is a grocery store in walking distance... 0 miles',
-                sportsClothes: 'Yes <br><br> There is a sports or clothing store in walking distance... 0 miles',
+                coffee: 'Yes <br><br> There is a coffee shop in walking distance... 0.01 miles',
+                grocery: 'Yes <br><br> There is a grocery store in walking distance... 0.6 miles',
+                sportsClothes: 'Yes <br><br> There is a sports or clothing store in walking distance... 0.3 miles',
                 
                 rating: '★ ★ ★ ★ ✰',  
                 ratingNum: '68'
@@ -921,7 +921,7 @@
                 logData(`Map Clicked`, null, null, clickCoords, mapNum);
                 console.log(`Map clicked at: ${clickCoords}`);
 
-                const bufferRadius = 0.8; // Buffer radius in kilometers
+                const bufferRadius = 0.2; // Buffer radius in kilometers
 
                 if(!checkBufferZone(clickCoords, chargingStations[0].coordinates, bufferRadius) && !checkBufferZone(clickCoords, chargingStations[1].coordinates, bufferRadius)) {
                     removeRoutes();
